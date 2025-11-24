@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="100X Traffic With YouTube - Learn proven YouTube growth strategies and traffic multiplication systems to achieve massive viral growth and exponential website traffic.">
+    <meta name="theme-color" content="#3b82f6">
+    <title>100X Traffic With YouTube - Webinar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #f0f9ff 0%, #f0fdf4 100%);
+        }
+        
+        .cta-button {
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+        }
+        
+        .cta-button:hover {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            box-shadow: 0 15px 35px rgba(59, 130, 246, 0.4);
+            transform: translateY(-2px);
+        }
+        
+        .cta-button:active {
+            transform: translateY(0);
+        }
+        
+        .feature-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            border-color: #3b82f6;
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.15);
+            transform: translateY(-4px);
+        }
+        
+        .benefit-card {
+            background: linear-gradient(135deg, #f0f9ff 0%, #f8fafc 100%);
+            border: 1px solid #dbeafe;
+            transition: all 0.3s ease;
+        }
+        
+        .benefit-card:hover {
+            border-color: #3b82f6;
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.1);
+            transform: translateY(-4px);
+        }
+        
+        .testimonial-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 1rem;
+        }
+        
+        .accordion-button {
+            transition: all 0.3s ease;
+        }
+        
+        .accordion-button.active {
+            background-color: #f0f9ff;
+        }
+        
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .accordion-content.active {
+            max-height: 500px;
+        }
+        
+        .countdown-timer {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .countdown-item {
+            background: linear-gradient(135deg, #fff5e6 0%, #fffbeb 100%);
+            border: 2px solid #fbbf24;
+            border-radius: 0.75rem;
+            padding: 1rem;
+            min-width: 80px;
+            text-align: center;
+        }
+        
+        .countdown-number {
+            font-size: 1.875rem;
+            font-weight: 800;
+            color: #f59e0b;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .countdown-label {
+            font-size: 0.75rem;
+            color: #92400e;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-top: 0.25rem;
+        }
+        
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 1rem;
+            box-shadow: 0 20px 50px rgba(59, 130, 246, 0.2);
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 1rem;
+        }
+        
+        .trust-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            color: #166534;
+            padding: 0.75rem 1.25rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+        
+        .star-rating {
+            display: flex;
+            gap: 0.25rem;
+            align-items: center;
+        }
+        
+        .star {
+            color: #fbbf24;
+            font-size: 1.25rem;
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.6s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .slide-in-left {
+            animation: slideInLeft 0.6s ease-out;
+        }
+        
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .slide-in-right {
+            animation: slideInRight 0.6s ease-out;
+        }
+        
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .scarcity-badge {
+            background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+            border: 1px solid #fca5a5;
+            color: #991b1b;
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-900">
+    <!-- Hero Section -->
+    <section class="hero-gradient pt-12 pb-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <!-- Brand/Logo -->
+            <div class="mb-8 fade-in">
+                <h1 class="text-3xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">100X</h1>
+            </div>
+            
+            <!-- Main Hero Content -->
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-12">
+                <!-- Left Column - Copy -->
+                <div class="fade-in">
+                    <div class="mb-6">
+                        <span class="trust-badge">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            Limited Time Offer
+                        </span>
+                    </div>
+                    
+                    <h2 class="text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
+                        100X Traffic <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-800">With YouTube</span>
+                    </h2>
+                    
+                    <p class="text-xl text-slate-600 mb-8 leading-relaxed">
+                        Discover the exact YouTube growth strategies and traffic multiplication system used by top creators to achieve massive viral growth and exponential website traffic.
+                    </p>
+                    
+                    <!-- Countdown Timer -->
+                    <div class="mb-8 p-6 bg-white rounded-2xl border border-slate-200">
+                        <p class="text-sm font-semibold text-slate-700 mb-4 text-center">Webinar Starts In:</p>
+                        <div class="countdown-timer">
+                            <div class="countdown-item">
+                                <div class="countdown-number" id="days">02</div>
+                                <div class="countdown-label">Days</div>
+                            </div>
+                            <div class="countdown-item">
+                                <div class="countdown-number" id="hours">14</div>
+                                <div class="countdown-label">Hours</div>
+                            </div>
+                            <div class="countdown-item">
+                                <div class="countdown-number" id="minutes">37</div>
+                                <div class="countdown-label">Minutes</div>
+                            </div>
+                            <div class="countdown-item">
+                                <div class="countdown-number" id="seconds">42</div>
+                                <div class="countdown-label">Seconds</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- CTA Button -->
+                    <a href="https://100x.com" class="cta-button inline-block px-8 py-4 text-white font-bold text-lg rounded-xl mb-6 w-full sm:w-auto text-center">
+                        Register Now - It's FREE
+                    </a>
+                    
+                    <p class="text-sm text-slate-500">
+                        ✓ No credit card required  ✓ Instant access  ✓ Limited spots available
+                    </p>
+                </div>
+                
+                <!-- Right Column - Video -->
+                <div class="slide-in-right">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/yOFo32LsFyM?t=4s" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white border-t border-slate-100">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <p class="text-slate-600 font-semibold mb-4">Trusted by Thousands of Content Creators</p>
+                <div class="flex flex-wrap justify-center gap-8 items-center">
+                    <div class="text-center">
+                        <p class="text-3xl font-bold text-slate-900">50K+</p>
+                        <p class="text-sm text-slate-600">Students Trained</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-3xl font-bold text-slate-900">100M+</p>
+                        <p class="text-sm text-slate-600">Views Generated</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-3xl font-bold text-slate-900">4.9/5</p>
+                        <p class="text-sm text-slate-600">Average Rating</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card p-6 rounded-2xl fade-in">
+                    <div class="star-rating mb-4">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="text-slate-700 mb-6 leading-relaxed">
+                        "This webinar completely transformed my YouTube channel. I went from 5K to 250K subscribers in just 6 months. The strategies are gold!"
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-white font-bold">
+                            JM
+                        </div>
+                        <div>
+                            <p class="font-semibold text-slate-900">James Mitchell</p>
+                            <p class="text-sm text-slate-600">Tech Creator</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card p-6 rounded-2xl fade-in" style="animation-delay: 0.1s;">
+                    <div class="star-rating mb-4">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="text-slate-700 mb-6 leading-relaxed">
+                        "The traffic multiplication system is insane. My website traffic increased 10x within 3 months. Best investment I've made!"
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center text-white font-bold">
+                            SR
+                        </div>
+                        <div>
+                            <p class="font-semibold text-slate-900">Sarah Rodriguez</p>
+                            <p class="text-sm text-slate-600">Digital Marketer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card p-6 rounded-2xl fade-in" style="animation-delay: 0.2s;">
+                    <div class="star-rating mb-4">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="text-slate-700 mb-6 leading-relaxed">
+                        "Finally, someone explaining YouTube growth in a way that actually works. The tactics are proven and easy to implement!"
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center text-white font-bold">
+                            MK
+                        </div>
+                        <div>
+                            <p class="font-semibold text-slate-900">Michael Khan</p>
+                            <p class="text-sm text-slate-600">Entrepreneur</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl font-bold text-slate-900 mb-4">What You'll Learn</h3>
+                <p class="text-xl text-slate-600">Master the proven strategies used by top YouTube creators</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Feature 1: YouTube Growth Strategies -->
+                <div class="feature-card p-8 rounded-2xl">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-200 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-2xl font-bold text-slate-900 mb-4">YouTube Growth Strategies</h4>
+                    <ul class="space-y-3 text-slate-700">
+                        <li class="flex items-start gap-3">
+                            <span class="text-blue-600 font-bold mt-1">✓</span>
+                            <span>Algorithm optimization techniques that actually work</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-blue-600 font-bold mt-1">✓</span>
+                            <span>Viral title and thumbnail formulas</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-blue-600 font-bold mt-1">✓</span>
+                            <span>Content structure that keeps viewers watching</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-blue-600 font-bold mt-1">✓</span>
+                            <span>Keyword research and SEO for YouTube</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2: Traffic Multiplication System -->
+                <div class="feature-card p-8 rounded-2xl">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-100 to-green-200 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-2xl font-bold text-slate-900 mb-4">Traffic Multiplication System</h4>
+                    <ul class="space-y-3 text-slate-700">
+                        <li class="flex items-start gap-3">
+                            <span class="text-green-600 font-bold mt-1">✓</span>
+                            <span>Cross-platform promotion strategies</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-green-600 font-bold mt-1">✓</span>
+                            <span>Link building and backlink strategies</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-green-600 font-bold mt-1">✓</span>
+                            <span>Community engagement and collaboration tactics</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-green-600 font-bold mt-1">✓</span>
+                            <span>Email marketing integration for sustained growth</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl font-bold text-slate-900 mb-4">The Results You'll Achieve</h3>
+                <p class="text-xl text-slate-600">Transform your YouTube presence and online business</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Benefits Content -->
+                <div class="space-y-8">
+                    <!-- Benefit 1: Massive Viral Growth -->
+                    <div class="benefit-card p-8 rounded-2xl">
+                        <div class="flex items-start gap-4">
+                            <div class="w-14 h-14 bg-gradient-to-br from-blue-100 to-blue-200 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-slate-900 mb-2">Massive Viral Growth</h4>
+                                <p class="text-slate-700">Unlock the secrets to creating viral content that gets millions of views and builds a loyal audience that keeps coming back.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Benefit 2: Exponential Website Traffic -->
+                    <div class="benefit-card p-8 rounded-2xl">
+                        <div class="flex items-start gap-4">
+                            <div class="w-14 h-14 bg-gradient-to-br from-green-100 to-green-200 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-7 h-7 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-slate-900 mb-2">Exponential Website Traffic</h4>
+                                <p class="text-slate-700">Drive thousands of qualified visitors to your website daily. Convert YouTube views into real business results and revenue.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Benefits Visual -->
+                <div class="bg-gradient-to-br from-blue-50 to-green-50 rounded-2xl p-12 border border-blue-100">
+                    <div class="space-y-8">
+                        <div class="text-center">
+                            <p class="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-600">100X</p>
+                            <p class="text-slate-700 font-semibold mt-2">Average Traffic Increase</p>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-sm font-semibold text-slate-700">Subscriber Growth</span>
+                                    <span class="text-sm font-bold text-blue-600">+50K/month</span>
+                                </div>
+                                <div class="w-full bg-slate-200 rounded-full h-2">
+                                    <div class="bg-gradient-to-r from-blue-600 to-blue-400 h-2 rounded-full" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-sm font-semibold text-slate-700">Video Views</span>
+                                    <span class="text-sm font-bold text-green-600">+100K/video</span>
+                                </div>
+                                <div class="w-full bg-slate-200 rounded-full h-2">
+                                    <div class="bg-gradient-to-r from-green-600 to-green-400 h-2 rounded-full" style="width: 98%;"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-sm font-semibold text-slate-700">Website Traffic</span>
+                                    <span class="text-sm font-bold text-blue-600">+500K/month</span>
+                                </div>
+                                <div class="w-full bg-slate-200 rounded-full h-2">
+                                    <div class="bg-gradient-to-r from-blue-600 to-purple-600 h-2 rounded-full" style="width: 92%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mid-Page CTA Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-600 to-blue-800">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-4xl font-bold text-white mb-6">Ready to 100X Your YouTube Traffic?</h3>
+            <p class="text-xl text-blue-100 mb-8">Join thousands of creators who are already seeing massive results. Spots are filling up fast!</p>
+            <a href="https://100x.com" class="inline-block px-10 py-4 bg-white text-blue-600 font-bold text-lg rounded-xl hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-xl">
+                Claim Your Free Spot Now
+            </a>
+            <p class="text-blue-200 text-sm mt-6">
+                This is a live webinar. Limited seats available. Register immediately to secure your spot.
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl font-bold text-slate-900 mb-4">Frequently Asked Questions</h3>
+                <p class="text-xl text-slate-600">Everything you need to know about the webinar</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                    <button class="accordion-button w-full px-8 py-6 text-left bg-white hover:bg-slate-50 flex items-center justify-between font-semibold text-slate-900 transition-all" onclick="toggleAccordion(this)">
+                        <span>Is this webinar really free?</span>
+                        <svg class="w-5 h-5 text-slate-600 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <div class="accordion-content px-8 py-6 bg-slate-50 border-t border-slate-200">
+                        <p class="text-slate-700 leading-relaxed">Yes! This is a completely free live webinar. You don't need a credit card to register, and there are no hidden charges. You'll get instant access to the webinar link upon registration.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                    <button class="accordion-button w-full px-8 py-6 text-left bg-white hover:bg-slate-50 flex items-center justify-between font-semibold text-slate-900 transition-all" onclick="toggleAccordion(this)">
+                        <span>Do I need experience with YouTube?</span>
+                        <svg class="w-5 h-5 text-slate-600 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <div class="accordion-content px-8 py-6 bg-slate-50 border-t border-slate-200">
+                        <p class="text-slate-700 leading-relaxed">Not at all! Whether you're just starting or already have a channel, this webinar is designed for all levels. We cover everything from the absolute basics to advanced growth strategies that even experienced creators haven't tried.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                    <button class="accordion-button w-full px-8 py-6 text-left bg-white hover:bg-slate-50 flex items-center justify-between font-semibold text-slate-900 transition-all" onclick="toggleAccordion(this)">
+                        <span>How long is the webinar?</span>
+                        <svg class="w-5 h-5 text-slate-600 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <div class="accordion-content px-8 py-6 bg-slate-50 border-t border-slate-200">
+                        <p class="text-slate-700 leading-relaxed">The live webinar runs for approximately 90 minutes, including a Q&A session at the end. You'll receive a recording link, so if you can't attend live, you can watch it anytime that works for you.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                    <button class="accordion-button w-full px-8 py-6 text-left bg-white hover:bg-slate-50 flex items-center justify-between font-semibold text-slate-900 transition-all" onclick="toggleAccordion(this)">
+                        <span>Will you try to sell me something during the webinar?</span>
+                        <svg class="w-5 h-5 text-slate-600 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <div class="accordion-content px-8 py-6 bg-slate-50 border-t border-slate-200">
+                        <p class="text-slate-700 leading-relaxed">We may mention our premium courses and coaching programs at the end of the webinar, but it's completely optional. The webinar itself is packed with actionable strategies you can implement immediately, regardless of whether you purchase anything.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                    <button class="accordion-button w-full px-8 py-6 text-left bg-white hover:bg-slate-50 flex items-center justify-between font-semibold text-slate-900 transition-all" onclick="toggleAccordion(this)">
+                        <span>What if I can't attend the live webinar?</span>
+                        <svg class="w-5 h-5 text-slate-600 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <div class="accordion-content px-8 py-6 bg-slate-50 border-t border-slate-200">
+                        <p class="text-slate-700 leading-relaxed">No problem! We'll send you a recording link within 24 hours of the webinar. You'll have lifetime access to the replay, so you can watch it whenever it's convenient for you.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                    <button class="accordion-button w-full px-8 py-6 text-left bg-white hover:bg-slate-50 flex items-center justify-between font-semibold text-slate-900 transition-all" onclick="toggleAccordion(this)">
+                        <span>How do I register?</span>
+                        <svg class="w-5 h-5 text-slate-600 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <div class="accordion-content px-8 py-6 bg-slate-50 border-t border-slate-200">
+                        <p class="text-slate-700 leading-relaxed">Simply click the "Register Now" button on this page, enter your email address, and you'll get instant access to the webinar link. You'll also receive a reminder email 24 hours before the webinar starts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-green-50">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="scarcity-badge inline-block mb-6">
+                <svg class="w-4 h-4 inline mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                </svg>
+                Only 47 Spots Remaining
+            </div>
+            
+            <h3 class="text-4xl font-bold text-slate-900 mb-6">Don't Miss This Opportunity</h3>
+            <p class="text-xl text-slate-700 mb-10 leading-relaxed">
+                This webinar reveals the exact strategies that helped creators go from zero to millions of views. The tactics, templates, and systems we share are worth thousands of dollars. And you're getting it all for free.
+            </p>
+            
+            <a href="https://100x.com" class="cta-button inline-block px-12 py-5 text-white font-bold text-lg rounded-xl mb-8">
+                Register Your Free Spot Now
+            </a>
+            
+            <p class="text-slate-600 text-sm">
+                <span class="font-semibold">⏰ Webinar Date:</span> March 15, 2024 at 2:00 PM EST<br>
+                <span class="font-semibold">⏱️ Duration:</span> 90 Minutes (Including Q&A)<br>
+                <span class="font-semibold">💰 Cost:</span> Completely FREE
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4 sm:px-6 lg:px-8 bg-slate-900 text-white">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+            <div class="text-center md:text-left">
+                <p class="text-slate-400 mb-2">&copy; 2024 100X. All rights reserved.</p>
+                <p class="text-slate-400 text-sm">
+                    Questions? Email us at <a href="mailto:admin@100x.com" class="text-blue-400 hover:text-blue-300 transition-colors">admin@100x.com</a>
+                </p>
+            </div>
+            
+            <a href="https://100x.com" class="cta-button px-8 py-3 text-white font-bold rounded-lg w-full md:w-auto text-center">
+                Register Now - FREE
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const webinarDate = new Date('2024-03-15T14:00:00').getTime();
+            const distance = webinarDate - now;
+
+            if (distance < 0) {
+                document.getElementById('days').textContent = '00';
+                document.getElementById('hours').textContent = '00';
+                document.getElementById('minutes').textContent = '00';
+                document.getElementById('seconds').textContent = '00';
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('days').textContent = String(days).padStart(2, '0');
+            document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+            document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+        // Accordion Toggle
+        function toggleAccordion(button) {
+            const content = button.nextElementSibling;
+            const isActive = content.classList.contains('active');
+            
+            // Close all other accordions
+            document.querySelectorAll('.accordion-content.active').forEach(item => {
+                if (item !== content) {
+                    item.classList.remove('active');
+                    item.previousElementSibling.classList.remove('active');
+                    item.previousElementSibling.querySelector('svg').style.transform = 'rotate(0deg)';
+                }
+            });
+            
+            // Toggle current accordion
+            content.classList.toggle('active');
+            button.classList.toggle('active');
+            button.querySelector('svg').style.transform = isActive ? 'rotate(0deg)' : 'rotate(180deg)';
+        }
+
+        // Smooth scroll for CTA buttons
+        document.querySelectorAll('a[href="https://100x.com"]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                // Allow normal navigation to external URL
+            });
+        });
+    </script>
+</body>
+</html>
