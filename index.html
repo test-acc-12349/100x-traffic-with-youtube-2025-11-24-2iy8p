@@ -262,19 +262,19 @@
                         <p class="text-sm font-semibold text-slate-700 mb-4 text-center">Webinar Starts In:</p>
                         <div class="countdown-timer">
                             <div class="countdown-item">
-                                <div class="countdown-number" id="days">02</div>
+                                <div class="countdown-number" id="days">00</div>
                                 <div class="countdown-label">Days</div>
                             </div>
                             <div class="countdown-item">
-                                <div class="countdown-number" id="hours">14</div>
+                                <div class="countdown-number" id="hours">00</div>
                                 <div class="countdown-label">Hours</div>
                             </div>
                             <div class="countdown-item">
-                                <div class="countdown-number" id="minutes">37</div>
+                                <div class="countdown-number" id="minutes">00</div>
                                 <div class="countdown-label">Minutes</div>
                             </div>
                             <div class="countdown-item">
-                                <div class="countdown-number" id="seconds">42</div>
+                                <div class="countdown-number" id="seconds">00</div>
                                 <div class="countdown-label">Seconds</div>
                             </div>
                         </div>
@@ -698,11 +698,11 @@
     </footer>
 
     <script>
-        // Countdown Timer
+        // Countdown Timer - starts at 23 hours 28 minutes
         function updateCountdown() {
             const now = new Date().getTime();
-            const webinarDate = new Date('2024-03-15T14:00:00').getTime();
-            const distance = webinarDate - now;
+            const webinarTime = now + (23 * 60 * 60 * 1000) + (28 * 60 * 1000);
+            const distance = webinarTime - now;
 
             if (distance < 0) {
                 document.getElementById('days').textContent = '00';
